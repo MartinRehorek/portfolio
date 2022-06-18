@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-home nav__icon"></i> Home
                         </a>
                     </li>
@@ -29,18 +30,18 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
+                        <a href="#skills" class="nav__link">
                             <i class="uil uil-file-plus-alt nav__icon"></i> Skills
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <i class="uil uil-suitcase-alt nav__icon"></i> Work
+                        <a href="#qualifications" class="nav__link">
+                            <i class="uil uil-suitcase-alt nav__icon"></i> Qualifications
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">
-                            <i class="uil uil-arrow nav__icon"></i> Projects
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-arrow nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
@@ -53,6 +54,8 @@
             </div>
 
             <div class="nav__btns">
+                <!-- Theme change button  --> 
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -103,7 +106,7 @@
                     <h1 class="home__title">Hi, I'm Martin</h1>
                     <h3 class="home__subtitle">Software developer</h3>
                     <p class="home__description">Loving to design and test software</p>
-                    <a href="#contact" class="button button--flex">
+                    <a href="#contacts" class="button button--flex">
                         Contact me<i class="uil uil-message button__icon"></i>
                     </a>
                 </div>
@@ -267,7 +270,7 @@
         
         </section>
 
-        <section class="qualification section">
+        <section class="qualification section" id="qualifications">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
 
@@ -362,25 +365,25 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent work</span>
 
-            <div class="portfolio__container container">
-                <div>
+            <div class="portfolio__container container swiper">
+                <div class="swiper-wrapper">
                     <!-- first  -->
-                    <div class="portfolio__content grid">
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/project1.jpeg" class="portfolio__img" alt="project 1">
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">CERN DATABASE</h3>
-                            <p class="portfolio__description">A database for cern </p>
-                            <a href="" class="button button--flex button--small portfolio__button">
+                            <div></div>
+                            <p class="portfolio__description">A database for cern that I used to work for so that I cold work </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
                                 Check out
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
+                            <div></div>
                         </div>
                     </div>
-                </div>
 
-                <div>
-                    <!-- second  -->
-                    <div class="portfolio__content grid">
+                                        <!-- second  -->
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/project1.jpeg" class="portfolio__img" alt="project 1">
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">uuVideoLibrary</h3>
@@ -391,15 +394,13 @@
                             </a>
                         </div>
                     </div>
-                </div>
 
-                <div>
-                    <!-- third  -->
-                    <div class="portfolio__content grid">
+                                        <!-- third  -->
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/project1.jpeg" class="portfolio__img" alt="project 1">
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">This portfolio</h3>
-                            <p class="portfolio__description">Very cheeky </p>
+                            <p class="portfolio__description">Very cheeky, for phone and desktop hjdfdhjuis udfjhudfjhdhjd  </p>
                             <a href="" class="button button--flex button--small portfolio__button">
                                 Check out
                                 <i class="uil uil-arrow-right button__icon"></i>
@@ -407,11 +408,97 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contacts">
+            <h2 class="section__title">Contact me</h2>
+            <span class="section__subtitle">Let's get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope-edit contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email:</h3>
+                            <a href="mailto:martinrehorek5@gmail.com" class="contact__subtitle">martinrehorek5@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-linkedin contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Linkedin:</h3>
+                            <a href="https://www.linkedin.com/in/martin-%C5%99eho%C5%99ek-664948216/" target="_blank" class="contact__subtitle">Martin Rehorek</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location:</h3>
+                            <span class="contact__subtitle">Prague, Czech Republic</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Martin</h1>
+                    <span class="footer__subtitle">Software Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#qualifications" class="footer__link">Qualifications</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__copyright">Made by Martin Rehorek</p>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper", {
+            cssMode: true,
+            loop: true,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
